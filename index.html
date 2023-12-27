@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/78799f5aee.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do tempo</title>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="caixa">
+        <input class="input-cidade"placeholder="Digite a cidade">
+        <button onclick="clicarNoBotao()">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        </button>
+        <br>
+        <br>
+        <div class="caixa-media">
+            <p class="cidade">Temperatura em maringa é de:</p>
+            <br>
+            <p class="temperatura">33ºC</p>
+            <div class="caixa-menor">
+                <p class="tempo">Nublado</p>
+                <img class="imagem-nuvem" src="https://openweathermap.org/img/wn/04n.png" alt="icone-nuvem">
+
+            </div>
+            <p class="umidade">Umidade 50%</p>
+        </div>
+    </div>
+</body>
+
+</html>
