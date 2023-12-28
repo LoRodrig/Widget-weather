@@ -1,3 +1,4 @@
+//desenvolvido por  https://github.com/LoRodrig
 const apiKey = "0c990dc0fd93306b893e64a390885d01";   //chave da api openweather               
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="; //url
 
