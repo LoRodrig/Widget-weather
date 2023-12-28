@@ -12,73 +12,93 @@ html {
     background-image: url('https://images.unsplash.com/photo-1429704658776-3d38c9990511?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTcwMzQ5NjAyMQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600');
     background-position: center;
     background-repeat: no-repeat;
+}* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
-    color: aliceblue;
+  color: aliceblue;
+ 
 }
 
 body {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(116, 111, 179, 0.37);
 }
 
-.caixa {
-    margin-top: 10rem;
-    margin-bottom: auto;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.7;
-    border-radius: 1.5rem;
-    padding: 2rem;
-    height: 17rem;
-    width: 23rem;
-    gap: 5rem;
-
+.caixa-maior {
+  background: rgb(126, 120, 215);
+  background: linear-gradient(
+    0deg,
+    rgba(126, 120, 215, 0.804359243697479) 24%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 3rem;
+  width: 80%;
+  max-width: 26rem;
+  margin: 6rem auto;
+  padding: 2.5rem 2.1rem;
+  text-align: center;
 }
 
 i {
-    height: 1rem;
-    width: 2rem;
-
+  height: 1rem;
+  width: 2rem;
 }
 
 button {
-    height: 2rem;
-    width: 3rem;
-    border-radius: 5rem;
+  border: none;
+  outline: none;
+  height: 3.75rem;
+  width: 3.75rem;
+  border-radius: 5rem;
+  background-color: #ebfffc;
+  cursor: pointer;
 }
 
 input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 1.8rem;
+  font-size: 1rem;
+  height: 3.75rem;
+  width: 16rem;
+  background-color: #ebfffc;
+  flex: 1;
+  color: #555;
+  text-align: center;
+  margin-right: 1rem;
+}
+.cidade {
+  font-size: 3rem;
+  color: white;
+  font-weight: 300;
+}
+.temperatura {
+  margin-top: 1rem;
+  font-size: 4rem;
+  color: white;
+}
 
-    border: none;
-    outline: none;
-    padding: 0.5rem;
-    border-radius: 1.5rem;
-    font-size: 1rem;
-    background-color: #7c7c7c85;
-    color: white;
-    
-    width: 15em;
-}
-.cidade{
-    font-size: 1.25rem;
-    color: white;
-    font-weight: 300;
-}
-.temperatura{
-    font-size: 1rem;
-    color: white;
+.caixa-menor {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  
 }
 
-.caixa-menor{
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-}
-.umidade{
-    margin-top: 1rem;
-    font-size: 0.9rem;
+
+.icone-nuvem,
+.icone-umidade {
+  width: 2rem;
+  height: auto;
 }
