@@ -8,6 +8,8 @@ async function buscarCidade(cidade) {
     const resposta = await fetch(apiUrl + cidade + `&appid=${apiKey}`);
     var  dados = await resposta.json(); //aguardar a resposta dados e pasar em json
 
+    const  iconeTempo = document.querySelector(".iconeTempo");
+
     console.log(dados);
     document.querySelector(".cidade").innerHTML= dados.name;//nome da cidade
     document.querySelector(".temperatura").innerHTML= Math.round( dados.main.temp) + "°c";//temperatura
@@ -30,7 +32,6 @@ async function buscarCidade(cidade) {
 
     }
 
-    document.querySelector(".tempo").style.display = "block";
 }
 
 function clicarNoBotao() {
