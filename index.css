@@ -95,7 +95,9 @@ input {
   padding: 0 1.25rem;
   
 }
-
+.iconeTempo{
+  margin-top: 1rem;
+}
 
 .icone-nuvem,
 .icone-umidade {
