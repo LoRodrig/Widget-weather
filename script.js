@@ -18,21 +18,22 @@ async function buscarCidade(cidade) {
     document.querySelector(".velocidade-vento").innerHTML= dados.main.humidity + "km/h";//velocidade dos ventos
 
     if(dados.weather[0].main == "Clouds"){ //recebe o retorno do tempo da api e altera o icone conforme o retorno
-        iconeTempo.src = "https://cdn-icons-png.flaticon.com/128/4248/4248789.png";
+        iconeTempo.src= "./assets/nublado.png";
     } else if(dados.weather[0].main == "Clear"){
-        iconeTempo.src = "https://cdn-icons-png.flaticon.com/128/5903/5903519.png";
+        iconeTempo.src = "./assets/sol.png";
     }
     else if(dados.weather[0].main == "Rain"){
-        iconeTempo.src = "https://cdn-icons-png.flaticon.com/128/5903/5903459.png";
+        iconeTempo.src = "./assets/trovoada.png";
     }
     else if(dados.weather[0].main == "Snow"){
-        iconeTempo.src = "https://cdn-icons-png.flaticon.com/128/2337/2337351.png";
+        iconeTempo.src = "./assets/neve.png";
     }
     else{
-        iconeTempo.src = "https://cdn-icons-png.flaticon.com/128/5903/5903519.png";
+        iconeTempo.src = "./assets/nublado.png";
 
     }
 
+    
 }
 
 function clicarNoBotao() {
