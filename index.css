@@ -20,7 +20,8 @@ body {
   background-color: rgba(12, 1, 61, 0.795);
 }
 
-.caixa-maior {/* caixa que engloba tudo*/
+.caixa-maior {
+  /* caixa que engloba tudo*/
   background: rgb(126, 120, 215);
   background: linear-gradient(
     0deg,
@@ -35,7 +36,8 @@ body {
   text-align: center;
 }
 
-i {  /* icone de pesquisa */
+i {
+  /* icone de pesquisa */
   height: 1rem;
   width: 2rem;
 }
@@ -50,7 +52,8 @@ button {
   cursor: pointer;
 }
 
-input {/* caixa aonde escreve */
+input {
+  /* caixa aonde escreve */
   border: none;
   outline: none;
   padding: 0.5rem;
@@ -75,7 +78,8 @@ input {/* caixa aonde escreve */
   color: white;
 }
 
-.caixa-menor {/* caixa aonde fica os icones e informações */
+.caixa-menor {
+  /* caixa aonde fica os icones e informações */
   margin-top: 1rem;
   display: flex;
   align-items: center;
@@ -84,11 +88,44 @@ input {/* caixa aonde escreve */
 }
 .iconeTempo {
   margin-top: 1rem;
-  width:8rem;
+  width: 8rem;
 }
 
 .icone-nuvem,
 .icone-umidade {
   width: 2rem;
   height: auto;
+}
+
+@media screen and (max-width: 360px) {
+  .caixa-maior {
+    width: 100%; /* Reduzindo ainda mais para telas menores */
+    margin: 2rem auto; /* Ajustando a margem */
+    padding: 2rem 1.5rem; /* Ajustando o padding */
+    max-width: 18rem;
+  }
+  
+  input {
+    width: 70%; /* Reduzindo o tamanho do input */
+    font-size: 1rem;
+    height: 3rem;
+     width: 10rem;
+  }
+  
+  .cidade {
+    font-size: 1rem; /* Reduzindo o tamanho da fonte */
+  }
+  
+  .temperatura {
+    font-size:2rem; /* Reduzindo o tamanho da fonte */
+    
+  }
+  
+  .iconeTempo {
+    width: 6rem; /* Reduzindo o tamanho do ícone */
+  }
+  .caixa-menor{
+    font-size: 12px;
+    padding: 0 ;
+  }
 }
