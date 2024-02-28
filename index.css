@@ -97,7 +97,7 @@ input {
   height: auto;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 412px) {
   .caixa-maior {
     width: 100%; /* Reduzindo ainda mais para telas menores */
     margin: 2rem auto; /* Ajustando a margem */
